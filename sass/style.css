@@ -7,10 +7,7 @@
 }
 
 body {
-  background: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.411)), url("https://i.postimg.cc/rpt5BgG3/film.jpg");
-  background-size: cover;
-  background-position: center center;
+  background-color: #444;
   font-family: "Source Sans Pro", sans-serif;
   color: #444;
   font-weight: 300;
@@ -111,8 +108,12 @@ h1 {
 
 /* Post */
 .post {
-  top: -100%;
+  display: none;
   /*dodać margin opacity height i potem transition na tym dziła */
+}
+
+.post.active {
+  display: block;
 }
 
 .post-author {

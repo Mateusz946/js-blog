@@ -16,10 +16,7 @@ $font-text: 'Source Sans Pro', sans-serif;
 }
 
 body {
-  background: $color-light;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.411)), url("https://i.postimg.cc/rpt5BgG3/film.jpg");
-  background-size: cover;
-  background-position: center center;
+  background-color: $color-dark;
   font-family: $font-text;
   color: $color-dark;
   font-weight: 300;
@@ -124,9 +121,9 @@ h1{
 /* Post */
 
 .post {
-  top: -100%; /*dodać margin opacity height i potem transition na tym dziła */
+  display: none; /*dodać margin opacity height i potem transition na tym dziła */
   &.active {
-    
+    display: block;
   }
 }
 
