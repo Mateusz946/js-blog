@@ -29,7 +29,8 @@ body {
   margin: 100px auto;
 
 }
-h1{
+
+h1 {
   color: rgb(255, 249, 249);
 }
 
@@ -38,6 +39,7 @@ h1{
   text-transform: uppercase;
   font-family: $font-header;
   font-weight: 600;
+
   span {
     text-transform: none;
     font-weight: 400;
@@ -85,17 +87,21 @@ h1{
   list-style-type: none;
   margin: 0;
   padding: 0;
+
   .active {
     font-weight: bold;
   }
-  li{
+
+  li {
     padding-top: 10px;
-    a{
+    
+    a {
       text-decoration: none;
       color: rgb(46, 45, 45);
       font-weight: 600;
       transition: all .4s;
-      &:hover{
+
+      &:hover {
         color: rgb(182, 181, 181);
         text-decoration: underline;
         letter-spacing: 0.7px;
@@ -133,6 +139,7 @@ h1{
 
 .post-tags {
   display: flex;
+
   p {
     margin: 0 10px 0 0;
   }
