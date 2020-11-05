@@ -3,7 +3,8 @@
 /* Variables */
 /* Global */
 *, *::before, *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -39,17 +40,24 @@ h1 {
 
 /* Layout */
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sidebar {
-  flex: 1 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
 }
 
 .posts {
-  flex: 2 0 0;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 0px;
+          flex: 2 0 0;
 }
 
 .sidebar, .posts {
@@ -88,6 +96,7 @@ h1 {
   text-decoration: none;
   color: #2e2d2d;
   font-weight: 600;
+  -webkit-transition: all .4s;
   transition: all .4s;
 }
 
@@ -115,11 +124,22 @@ h1 {
   display: block;
 }
 
-.post-author {
-  font-style: italic;
+.post .post-author a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #00279c;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.post .post-author a:hover {
+  color: #5176e7;
+  letter-spacing: .4px;
 }
 
 .post-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -129,4 +149,6 @@ h1 {
 
 .post-tags .list li {
   padding: 0 5px;
+  text-decoration: underline;
 }
+/*# sourceMappingURL=style.css.map */

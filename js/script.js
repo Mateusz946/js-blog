@@ -39,7 +39,8 @@ function titleClickHandler(event){
 const optArticleSelector = '.post';
 const optTitleSelector = '.post-title';
 const optTitleListSelector = '.titles';
-const optArticleTagsSelector = '.post-tags .list'
+const optArticleTagsSelector = '.post-tags .list';
+const optArticleAuthors = '.post-author';
 
 function generateTitleLinks(customSelector = ''){
   /* remove contents of titleList */
@@ -145,3 +146,34 @@ function addClickListenersToTags() {
 }
 
 addClickListenersToTags();
+
+//Dodanie autora do artykułu
+
+function generateAuthors(){
+  /* find all authors */
+  const articles = document.querySelectorAll(optArticleSelector);
+  /* START LOOP: for every author: */
+  for (let article of articles){
+    /* find authors wrapper */
+    const wrapperAuthors = article.querySelector(optArticleAuthors);
+    wrapperAuthors.innerHTML = '';
+    /* make html variable with empty string */
+    let html = '';
+    /* get author name from data-author attribute */
+    const authorName = article.getAttribute('data-author');
+    /* generate and add HTML of the link to html variable */
+    const linkHTML = '<a href="#"><span>' + authorName + '</span></a>';
+    html = html + linkHTML;
+    /* insert HTML into the authors wrapper */
+    wrapperAuthors.innerHTML = html;
+  /* END LOOP: for every article: */
+  }
+  /* [NEW] find list of authors in right column */
+  /* [NEW] START LOOP: for each author in allAuthors: */
+    /* [NEW] generate code of a link and add it to allAuthorsHTML */
+  /* [NEW] END LOOP: for each author in allAuthors: */
+  /*[NEW] add HTML from allAuthorsHTML to authorList */
+
+
+}
+generateAuthors();

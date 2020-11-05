@@ -104,13 +104,10 @@ h1 {
       &:hover {
         color: rgb(182, 181, 181);
         text-decoration: underline;
-        
       }
     }
   }
 }
-
-
 
 .list-horizontal {
   li {
@@ -133,10 +130,16 @@ h1 {
   &.active {
     display: block;
   }
-}
-
-.post-author {
-  font-style: italic;
+  .post-author a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 39, 156);
+    transition: all .3s;
+    &:hover{
+      color: rgb(81, 118, 231);
+      letter-spacing: .4px;
+    }
+  }
 }
 
 .post-tags {
@@ -148,6 +151,6 @@ h1 {
 
   .list li{
     padding: 0 5px;
-
+    text-decoration: underline;
   }
 }
