@@ -104,11 +104,13 @@ h1 {
       &:hover {
         color: rgb(182, 181, 181);
         text-decoration: underline;
-        letter-spacing: 0.7px;
+        
       }
     }
   }
 }
+
+
 
 .list-horizontal {
   li {
@@ -142,5 +144,10 @@ h1 {
 
   p {
     margin: 0 10px 0 0;
+  }
+
+  .list li{
+    padding: 0 5px;
+
   }
 }

@@ -94,7 +94,6 @@ h1 {
 .list li a:hover {
   color: #b6b5b5;
   text-decoration: underline;
-  letter-spacing: 0.7px;
 }
 
 .list-horizontal li {
@@ -126,4 +125,8 @@ h1 {
 
 .post-tags p {
   margin: 0 10px 0 0;
+}
+
+.post-tags .list li {
+  padding: 0 5px;
 }
