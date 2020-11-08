@@ -100,6 +100,10 @@ h1 {
   transition: all .4s;
 }
 
+.list li a .tag-size-1 {
+  font-size: 80px;
+}
+
 .list li a:hover {
   color: #b6b5b5;
   text-decoration: underline;
@@ -150,5 +154,30 @@ h1 {
 .post-tags .list li {
   padding: 0 5px;
   text-decoration: underline;
+}
+
+/* Tags */
+.tags li {
+  display: inline;
+}
+
+.tag-size-1 {
+  font-size: 13px;
+}
+
+.tag-size-2 {
+  font-size: 18px;
+}
+
+.tag-size-3 {
+  font-size: 23px;
+}
+
+.tag-size-4 {
+  font-size: 29px;
+}
+
+.tag-size-5 {
+  font-size: 35px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -100,6 +100,9 @@ h1 {
       color: rgb(46, 45, 45);
       font-weight: 600;
       transition: all .4s;
+      .tag-size-1{
+        font-size: 80px;
+      }
 
       &:hover {
         color: rgb(182, 181, 181);
@@ -153,4 +156,32 @@ h1 {
     padding: 0 5px;
     text-decoration: underline;
   }
+}
+
+/* Tags */
+
+.tags {
+  li {
+    display: inline;
+  }
+}
+
+.tag-size-1 {
+  font-size: 13px;
+}
+
+.tag-size-2 {
+  font-size: 18px;
+}
+
+.tag-size-3 {
+  font-size: 23px;
+}
+
+.tag-size-4 {
+  font-size: 29px;
+}
+
+.tag-size-5 {
+  font-size: 35px;
 }
